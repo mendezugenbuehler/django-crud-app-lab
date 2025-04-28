@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 offset-m3">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title center-align">Add a Dog</span>
+          <form action="" method="POST">
+            {% csrf_token %}
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">pets</i>
+                <input id="name" type="text" name="name" class="validate" required>
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">category</i>
+                <input id="breed" type="text" name="breed" class="validate" required>
+                <label for="breed">Breed</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">description</i>
+                <textarea id="description" name="description" class="materialize-textarea" required></textarea>
+                <label for="description">Description</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">cake</i>
+                <input id="age" type="number" name="age" class="validate" required>
+                <label for="age">Age</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 center-align">
+                <button class="btn waves-effect waves-light" type="submit">
+                  Add Dog
+                  <i class="material-icons right">add</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

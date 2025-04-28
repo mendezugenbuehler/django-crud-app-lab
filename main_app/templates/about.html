@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dog Collector</title>
-  </head>
-  <body>
-    <h1>About the Dog Collector</h1>
-  </body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col s12">
+    <h2 class="header">About Dog Collector</h2>
+    <div class="card">
+      <div class="card-content">
+        <h3 class="card-title">Our Mission</h3>
+        <p class="flow-text">
+          Dog Collector is a web app that helps you keep track of your dogs & their feeding schedules. 
+          With this app, you can add dogs to your collection, record their feeding times, and manage their information.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

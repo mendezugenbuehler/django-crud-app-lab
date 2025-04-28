@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/home.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to Dog Collector</h1>
+<p>Track your dogs and their feeding schedules!</p>
+
+{% if not user.is_authenticated %}
+  <p>Please <a href="{% url 'login' %}">login</a> or <a href="{% url 'signup' %}">signup</a> to get started.</p>
+{% else %}
+  <p>View your <a href="{% url 'index' %}">dogs</a> or <a href="{% url 'dogs_create' %}">add a new dog</a>.</p>
+{% endif %}
+
+{% endblock %}

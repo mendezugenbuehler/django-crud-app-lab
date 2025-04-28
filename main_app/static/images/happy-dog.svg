@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .happy-dog {
+            fill: #FFB74D;
+            stroke: #795548;
+            stroke-width: 2;
+        }
+        .tongue {
+            fill: #FF4081;
+        }
+        .cheek {
+            fill: #FFCDD2;
+        }
+    </style>
+    
+    <!-- Dog's head -->
+    <circle cx="50" cy="50" r="30" class="happy-dog"/>
+    
+    <!-- Dog's ears -->
+    <path d="M30 30 Q20 20 15 30 L25 40 Z" class="happy-dog"/>
+    <path d="M70 30 Q80 20 85 30 L75 40 Z" class="happy-dog"/>
+    
+    <!-- Cheeks -->
+    <circle cx="40" cy="55" r="8" class="cheek"/>
+    <circle cx="60" cy="55" r="8" class="cheek"/>
+    
+    <!-- Dog's eyes -->
+    <circle cx="40" cy="45" r="3" fill="#795548"/>
+    <circle cx="60" cy="45" r="3" fill="#795548"/>
+    
+    <!-- Eye sparkles -->
+    <circle cx="41" cy="44" r="1" fill="white"/>
+    <circle cx="61" cy="44" r="1" fill="white"/>
+    
+    <!-- Dog's nose -->
+    <circle cx="50" cy="55" r="5" fill="#795548"/>
+    
+    <!-- Happy mouth -->
+    <path d="M40 65 Q50 75 60 65" stroke="#795548" stroke-width="2" fill="none"/>
+    
+    <!-- Tongue -->
+    <path d="M45 65 Q50 72 55 65" class="tongue" stroke="#795548" stroke-width="1"/>
+</svg> 

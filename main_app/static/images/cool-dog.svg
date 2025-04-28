@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .cool-dog {
+            fill: #FFB74D;
+            stroke: #795548;
+            stroke-width: 2;
+        }
+        .sunglasses {
+            fill: #795548;
+        }
+        .lens {
+            fill: #2196F3;
+        }
+        .highlight {
+            fill: white;
+        }
+    </style>
+    
+    <!-- Dog's head -->
+    <circle cx="50" cy="50" r="30" class="cool-dog"/>
+    
+    <!-- Dog's ears -->
+    <path d="M30 30 Q20 20 15 30 L25 40 Z" class="cool-dog"/>
+    <path d="M70 30 Q80 20 85 30 L75 40 Z" class="cool-dog"/>
+    
+    <!-- Sunglasses frame -->
+    <path d="M35 45 L65 45" stroke="#795548" stroke-width="3"/>
+    <rect x="35" y="40" width="15" height="10" class="sunglasses"/>
+    <rect x="50" y="40" width="15" height="10" class="sunglasses"/>
+    
+    <!-- Sunglasses lenses -->
+    <rect x="36" y="41" width="13" height="8" class="lens"/>
+    <rect x="51" y="41" width="13" height="8" class="lens"/>
+    
+    <!-- Sunglasses highlights -->
+    <rect x="38" y="42" width="3" height="2" class="highlight"/>
+    <rect x="53" y="42" width="3" height="2" class="highlight"/>
+    
+    <!-- Dog's nose -->
+    <circle cx="50" cy="55" r="5" fill="#795548"/>
+    
+    <!-- Cool smirk -->
+    <path d="M45 60 Q50 63 55 60" stroke="#795548" stroke-width="2" fill="none"/>
+</svg> 

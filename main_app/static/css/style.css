@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card .card-image img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card.horizontal {
+    margin-bottom: 30px;
+}
+
+.card.horizontal .card-image {
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.card.horizontal .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Card Title Styles */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #009688;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 4px;
+    text-transform: none;
+    margin-right: 10px;
+}
+
+.btn i {
+    font-size: 1.2em;
+}
+
+/* Form Styles */
+.input-field {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.input-field input[type=date]:focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=password]:focus+label {
+    color: #009688;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 2px solid #009688;
+    box-shadow: none;
+}
+
+/* Table Styles */
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: rgba(0, 150, 136, 0.1);
+}
+
+/* Header Styles */
+.header {
+    color: #009688;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer.page-footer {
+    padding-top: 0;
+}
+
+/* Detail Page Specific Styles */
+.detail-card {
+    margin-bottom: 30px;
+}
+
+.feeding-section {
+    margin-top: 20px;
+}
+
+.feeding-section .card {
+    margin-bottom: 20px;
+}
+
+.feeding-section .card-content {
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 600px) {
+    .card.horizontal {
+        flex-direction: column;
+    }
+
+    .card.horizontal .card-image {
+        max-width: 100%;
+        height: 200px;
+    }
+}

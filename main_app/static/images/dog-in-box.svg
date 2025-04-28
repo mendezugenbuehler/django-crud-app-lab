@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box-dog {
+            fill: #FFB74D;
+            stroke: #795548;
+            stroke-width: 2;
+        }
+        .box {
+            fill: #E0E0E0;
+            stroke: #795548;
+            stroke-width: 2;
+        }
+        .box-pattern {
+            fill: none;
+            stroke: #795548;
+            stroke-width: 1;
+            stroke-dasharray: 2,2;
+        }
+    </style>
+    
+    <!-- Box front -->
+    <rect x="20" y="40" width="60" height="40" class="box"/>
+    
+    <!-- Box top -->
+    <path d="M20 40 L40 20 L100 20 L80 40" class="box"/>
+    
+    <!-- Box side -->
+    <path d="M80 40 L100 20 L100 60 L80 80" class="box"/>
+    
+    <!-- Box pattern -->
+    <path d="M30 50 L70 50" class="box-pattern"/>
+    <path d="M30 60 L70 60" class="box-pattern"/>
+    <path d="M30 70 L70 70" class="box-pattern"/>
+    
+    <!-- Dog's head -->
+    <circle cx="50" cy="50" r="15" class="box-dog"/>
+    
+    <!-- Dog's ears -->
+    <path d="M40 40 Q35 35 30 40 L35 45 Z" class="box-dog"/>
+    <path d="M60 40 Q65 35 70 40 L65 45 Z" class="box-dog"/>
+    
+    <!-- Dog's eyes -->
+    <circle cx="45" cy="48" r="2" fill="#795548"/>
+    <circle cx="55" cy="48" r="2" fill="#795548"/>
+    
+    <!-- Eye sparkles -->
+    <circle cx="46" cy="47" r="1" fill="white"/>
+    <circle cx="56" cy="47" r="1" fill="white"/>
+    
+    <!-- Dog's nose -->
+    <circle cx="50" cy="52" r="3" fill="#795548"/>
+    
+    <!-- Curious mouth -->
+    <path d="M48 55 Q50 57 52 55" stroke="#795548" stroke-width="1" fill="none"/>
+</svg> 

@@ -1,0 +1,49 @@
+<form action="{% url 'add_feeding' dog.id %}" method="POST">
+  {% csrf_token %}
+  <div class="row">
+    <div class="input-field col s12">
+      <input type="date" class="datepicker" name="date" id="id_date" required>
+      <label for="id_date">Date</label>
+      <span class="helper-text">When did you feed your dog?</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <select name="meal" id="id_meal" required>
+        <option value="" disabled selected>Choose a meal</option>
+        <option value="B">Breakfast</option>
+        <option value="L">Lunch</option>
+        <option value="D">Dinner</option>
+      </select>
+      <label>Meal</label>
+      <span class="helper-text">Which meal did you feed your dog?</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <button type="submit" class="btn teal">
+        <i class="material-icons left">add</i>Add Feeding
+      </button>
+      <a href="{% url 'detail' dog.id %}" class="btn grey">
+        <i class="material-icons left">cancel</i>Cancel
+      </a>
+    </div>
+  </div>
+</form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize date picker
+    var dateElems = document.querySelectorAll('.datepicker');
+    var dateInstances = M.Datepicker.init(dateElems, {
+      format: 'yyyy-mm-dd',
+      autoClose: true,
+      defaultDate: new Date(),
+      setDefaultDate: true
+    });
+
+    // Initialize select
+    var selectElems = document.querySelectorAll('select');
+    var selectInstances = M.FormSelect.init(selectElems);
+  });
+</script> 
